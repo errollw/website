@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Erroll Wood</title>
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <section class="section">
+        <div class="container is-max-desktop">
+            <div class="columns">
+                <div class="column is-one-quarter">
+                    <figure class="image">
+                        <img src="img/erroll_wood_512.jpg">
+                    </figure>
+                </div>
+                <div class="column">
+                    <h1 class="title is-3">
+                        Erroll Wood
+                    </h1>
+                    <div class="content">
+                        <p>I am a Principal Scientist at Microsoft's <a href="https://www.microsoft.com/en-us/research/lab/mixed-reality-ai-lab-cambridge">Mixed-Reality and AI Lab</a> in Cambridge, UK. There, I have worked on
+                            <a href="https://youtu.be/4rRF4UMppjY?t=43">hand tracking for HoloLens 2</a>, <a href="https://youtu.be/5UIUy1QGX8Q?t=203">avatars for Microsoft Mesh</a>,
+                            <a href="https://microsoft.github.io/FaceSynthetics/">synthetic data for face tracking</a>, and Holoportation. Before, I did my PhD at the <a href="https://www.cl.cam.ac.uk/research/rainbow/">University of Cambridge</a>, supervised
+                            by <a href="https://www.cl.cam.ac.uk/~pr10">Professor Peter Robinson</a>.</p>
+                        <p>My preferred method of contact is email: errollw@gmail.com.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+
+            // Add a click event on each of them
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+
+                    // Get the target from the "data-target" attribute
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+
+                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+
+                });
+            });
+        }
+    });
+</script>
+
+</html>
