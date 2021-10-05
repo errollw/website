@@ -15,3 +15,14 @@
         margin-bottom: 0.75em;
     }
 }
+
+aside {
+    display: flex !important;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+aside>p {
+    padding-bottom: 0.3em;
+}
