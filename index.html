@@ -181,6 +181,15 @@
                 });
             });
         }
+
+        // Convert all PDF links to link to GitHub to get around LFS issues
+        Array.from(document.querySelectorAll('a')).forEach(function(el) {
+            var href = el.getAttribute('href');
+            if (href.startsWith("pdf/")) {
+                el.setAttribute('href', "https://github.com/errollw/website/raw/main/" + href);
+            }
+        });
+
     });
 </script>
 
