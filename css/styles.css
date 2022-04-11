@@ -23,6 +23,6 @@ aside {
     justify-content: center;
 }
 
-aside>p {
+aside>p:not(:last-child) {
     padding-bottom: 0.3em;
 }
