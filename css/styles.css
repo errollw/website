@@ -16,6 +16,10 @@
     }
 }
 
+.columns {
+    align-items: center;
+}
+
 aside {
     display: flex !important;
     align-items: flex-start;
@@ -25,4 +29,16 @@ aside {
 
 aside>p:not(:last-child) {
     padding-bottom: 0.3em;
+}
+
+img.inner-border {
+    outline: 1px solid #dbdbdb;
+    outline-offset: -1px;
+}
+
+hr.section-divider {
+    height: 1px;
+    background-color: #EEE;
+    border: none;
+    margin: 1.5rem 0;
 }
